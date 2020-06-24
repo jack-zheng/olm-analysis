@@ -1,6 +1,9 @@
 # ignore Mac OS tmp file
 .DS_Store
 
+# ignore cache file
+dump.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
