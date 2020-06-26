@@ -4,6 +4,9 @@
 # ignore cache file
 dump.json
 
+# ignore vscode config
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

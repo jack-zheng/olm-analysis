@@ -55,13 +55,6 @@ def unser_email(dict):
     return tmp
 
 
-def fetch_emails():
-    for filename in os.listdir(current_folder):
-        if not filename.endswith(".xml"):
-            print(current_folder+"/"+filename+" is not xml")
-            continue
-
-
 def in_exclude_folder(path): 
     for sub in ['Sent Items', 'Sync Issues']: 
         if sub in path: 
@@ -79,10 +72,10 @@ def cache_email():
         json.dump(emails, file, default=serialize_email, indent=2)
 
 
+def extract_emails():
+    with open('dump.json') as file:
+        emails = json.load(file, object_hook=unser_email)
+    return emails
+
 if __name__ == '__main__':
-    cache_email()
-
-
-'''
-统计所有的邮件大小画出 箱形图
-'''
+    pass
