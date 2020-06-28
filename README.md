@@ -49,6 +49,17 @@ xml 文件的定义可以参考 git repo OLMReader 中 [email.xsd](https://githu
 ## 常用包
 
 * matplotlib 可视化 - 画图
+* numpy 处理数据
+* pandas 处理非值形数据
+
+pandas 在功能上要比 numpy 强很多，整合了很多数据库类似的操作，比如 merge, join, group 等 还有一些 index 之类的东西
+
+## 方法
+
+df.desciber() 很方便，显示大体信息
+df.head()
+df.info()
+df.sort_values() 排序
 
 ## 表示连续数据: 直方图，箱型图
 
