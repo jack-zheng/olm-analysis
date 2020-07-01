@@ -14,6 +14,7 @@ jupyter = "*"
 matplotlib = "*"
 pandas = "*"
 numpy = "*"
+wordcloud = "*"
 
 [requires]
 python_version = "3.7"
